@@ -4,12 +4,14 @@ import { environment } from 'src/environments/environment.prod';
 import { UserLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
 
+
 @Component({
   selector: 'app-entrar',
   templateUrl: './entrar.component.html',
   styleUrls: ['./entrar.component.css']
 })
 export class EntrarComponent implements OnInit {
+
 
   userLogin: UserLogin = new UserLogin()
 

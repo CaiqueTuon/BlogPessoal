@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Router, RouterModule } from '@angular/router';
 import { User } from '../model/User';
 import { AuthService } from '../service/auth.service';
 import { AlertasService } from './../service/alertas.service';
+
 
 
 @Component({
@@ -49,3 +51,4 @@ export class CadastrarComponent implements OnInit {
   }
 
 }
+
