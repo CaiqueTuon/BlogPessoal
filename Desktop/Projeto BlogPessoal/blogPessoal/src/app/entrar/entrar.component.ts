@@ -22,7 +22,7 @@ export class EntrarComponent implements OnInit {
     window.scroll(0,0)
   }
   entrar(){
-    this.auth.entrar(this.userLogin).subscribe((resp:UserLogin)=>{
+    this.auth.logar(this.userLogin).subscribe((resp:UserLogin)=>{
       this.userLogin = resp
 
       environment.token = this.userLogin.token
@@ -33,8 +33,8 @@ export class EntrarComponent implements OnInit {
       this.router.navigate(['/inicio'])
 
 
-    },erro=>{
-      if(erro.status == 500){
+    },err=>{
+      if(err.status == 500){
         alert('Usuario ou senha incorreta')
       }
     })
